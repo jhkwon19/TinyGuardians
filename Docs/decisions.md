@@ -2,11 +2,11 @@
 
 이 문서는 Tiny Guardians의 중요한 결정과 이유를 기록한다.
 
-## 2026-09-02: Unreal Engine 5 사용 확정
+## 2026-09-02: Unreal Engine 5.8.0 사용 확정
 
 결정:
 
-- Tiny Guardians는 Unreal Engine 5로 개발한다.
+- Tiny Guardians는 Unreal Engine 5.8.0으로 개발한다.
 
 이유:
 
@@ -16,9 +16,38 @@
 - Blueprint와 C++를 혼합할 수 있다.
 - Windows 빌드와 Steam 출시를 목표로 삼기 적합하다.
 
-남은 사항:
+상태:
 
-- 정확한 UE5 버전은 아직 확정하지 않았다.
+- Unreal Engine 5.8.0 설치와 Third Person C++ 프로젝트의 첫 빌드/플레이 검증을 완료했다.
+
+## 2026-09-02: Windows SSD에 UE 프로젝트 배치
+
+결정:
+
+- Git 저장소와 UE 프로젝트를 `E:\Projects\TinyGuardians`에 함께 둔다.
+- WSL에서는 `/mnt/e/Projects/TinyGuardians`로 접근한다.
+
+이유:
+
+- Unreal Editor와 Visual Studio가 Windows 네이티브 NTFS 경로에서 안정적으로 빌드하고 에셋을 처리할 수 있다.
+- 문서, 코드, 콘텐츠와 Git 이력을 하나의 프로젝트 루트에서 관리할 수 있다.
+
+## 2026-09-02: Git LFS를 사용하지 않음
+
+결정:
+
+- 현재는 Git LFS를 사용하지 않고 UE 프로젝트 파일을 일반 Git으로 관리한다.
+- 커밋 전에 GitHub의 일반 Git 단일 파일 제한을 넘는 에셋이 없는지 확인한다.
+
+이유:
+
+- Git LFS의 추가 저장공간 및 전송량 비용을 사용하지 않기로 했다.
+- 현재 커밋 대상은 약 137MB이며 가장 큰 파일은 약 21MB로 일반 Git 푸시가 가능하다.
+
+주의:
+
+- `.uasset`과 `.umap`은 바이너리 파일이므로 변경 이력이 누적되면 저장소가 빠르게 커질 수 있다.
+- 대형 Fab 에셋을 추가하기 전 파일 크기와 저장소 증가량을 확인한다.
 
 ## 2026-09-02: 게임명과 프로젝트명 확정
 

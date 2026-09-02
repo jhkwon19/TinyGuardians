@@ -1,7 +1,7 @@
 # Tiny Guardians — AI Handoff
 
 > 최종 갱신: 2026-09-02  
-> 상태: 사전 기획 및 개발환경 준비 단계  
+> 상태: UE5 프로토타입 개발 시작 단계
 > 대상 도구: VS Code, Codex 확장, Claude Code 확장, Unreal Engine 5
 
 ## 1. 목적
@@ -18,12 +18,16 @@
 - [Docs/game-design.md](Docs/game-design.md): 게임 기획 상세
 - [Docs/gameplay-systems.md](Docs/gameplay-systems.md): 게임플레이 시스템 설계
 - [Docs/decisions.md](Docs/decisions.md): 주요 결정 기록
+- [Docs/setup.md](Docs/setup.md): UE5와 개발환경 설치 가이드
+- [Docs/dev-pc-spec.md](Docs/dev-pc-spec.md): 개발 PC 사양 확인 기록
 
 ## 3. 현재 확정된 방향
 
 - 게임 이름: Tiny Guardians
 - UE 프로젝트명/폴더명: `TinyGuardians`
-- 엔진: Unreal Engine 5 확정
+- 엔진: Unreal Engine 5.8.0 설치 완료
+- 프로젝트 기반: Third Person C++ 템플릿, 첫 C++ 빌드와 플레이 검증 완료
+- 저장소 위치: Windows `E:\Projects\TinyGuardians`, WSL `/mnt/e/Projects/TinyGuardians`
 - 장르: 귀여운 캐주얼 판타지풍 3D 로컬 2인 협동 쿼터뷰 핵앤슬래쉬 액션 RPG
 - 조작: PC 한 대, 화면 하나, 게임패드 2개
 - 플레이어 역할:
@@ -56,8 +60,7 @@
 
 ## 5. 아직 결정되지 않은 사항
 
-- 정확한 UE5 버전
-- Blueprint 중심 또는 C++ 혼합 비율
+- Blueprint와 C++의 세부 역할 분담
 - 전방 캐릭터와 서포터 캐릭터의 기본 스킬 구성
 - 캐릭터별 성장, 장비/아이템 업그레이드의 세부 구조
 - 테스트 챕터 마법 숲의 세부 배치, 몬스터 구성, 보상 구성
@@ -68,12 +71,11 @@
 
 ## 6. 현재 바로 해야 할 다음 작업
 
-1. 전방 캐릭터와 서포터 캐릭터의 기본 스킬 구성을 정한다.
-2. 테스트 챕터 마법 숲의 몬스터 구성과 보상 구성을 정한다.
-3. PC 사양과 설치 가능한 UE5 버전을 확인한다.
-4. 정확한 UE5 버전을 확정한다.
-5. UE5 `TinyGuardians` 프로젝트를 생성한다.
-6. GitHub 원격 저장소를 연결하고 첫 커밋을 만든다.
+1. 게임패드 2개 Windows 인식 여부를 확인한다.
+2. 게임패드 2개로 로컬 플레이어 생성을 검증한다.
+3. 쿼터뷰 공유 카메라 프로토타입을 구현한다.
+4. 전방 캐릭터와 서포터 캐릭터의 기본 스킬 구성을 정한다.
+5. 테스트 챕터 마법 숲의 몬스터 구성과 보상 구성을 정한다.
 
 ## 7. 사용자와 개발 방식
 
@@ -107,4 +109,4 @@
 
 ## 10. 현재 상태 한 줄 요약
 
-Tiny Guardians는 UE5로 개발 예정인 귀여운 캐주얼 판타지풍 로컬 2인 협동 쿼터뷰 핵앤슬래쉬 액션 RPG이며, 현재는 UE5 프로젝트 생성 전 문서화와 테스트 챕터 설계 단계다.
+Tiny Guardians는 UE 5.8 Third Person C++ 기반 프로젝트 생성과 첫 플레이 검증을 마쳤으며, 다음 단계는 게임패드 2개 로컬 플레이어와 쿼터뷰 공유 카메라 프로토타입이다.

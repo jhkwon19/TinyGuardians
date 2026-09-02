@@ -7,11 +7,13 @@
 
 ## 다음 작업
 
-- [ ] PC 사양과 설치 가능한 UE5 버전 확인
-- [ ] 정확한 UE5 버전 확정
-- [ ] UE5 `TinyGuardians` 프로젝트 생성
-- [ ] GitHub 원격 저장소 연결
-- [ ] 기본 문서 구조를 UE 프로젝트 루트 기준으로 재확인
+- [x] 개발 PC 사양 확인(CPU, RAM, GPU, VRAM, 저장공간, Windows 버전)
+- [ ] 게임패드 2개 Windows 인식 여부 확인
+- [x] Unreal Engine 5.8.0 설치 완료
+- [x] Visual Studio 2022 C++ 빌드 환경 설치
+- [x] UE5 `TinyGuardians` C++ 프로젝트 생성 및 첫 빌드/플레이 검증
+- [x] GitHub 원격 저장소 연결
+- [x] 기본 문서 구조를 UE 프로젝트 루트 기준으로 재확인
 
 ## 이후 작업
 
@@ -28,9 +30,13 @@
 - [x] 게임명 `Tiny Guardians` 확정
 - [x] 프로젝트명과 폴더명 `TinyGuardians` 확정
 - [x] UE5 엔진 사용 확정
+- [x] 정확한 UE5 버전 `5.8.0` 확정
+- [x] Epic Games Launcher 설치 및 UE 5.8.0 설치 시작
 - [x] 로컬 2인 협동 방향 확정
 - [x] 쿼터뷰 핵앤슬래쉬 액션 RPG 방향 확정
 - [x] 마법 숲 테스트 챕터 4스테이지 구조 확정
 - [x] 문서 구조 분리
 - [x] Git 저장소 초기화
 - [x] UE용 `.gitignore` 적용
+- [x] UE5 개발환경 설치 가이드 문서화
+- [x] 프로젝트를 Windows SSD 경로 `E:\Projects\TinyGuardians`로 이전

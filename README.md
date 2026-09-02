@@ -4,10 +4,11 @@ Tiny Guardians는 Steam 출시를 목표로 준비 중인 귀여운 캐주얼 �
 
 ## 현재 상태
 
-- 단계: 사전 기획 및 개발환경 준비
-- 엔진: Unreal Engine 5 확정, 정확한 UE5 버전은 미정
+- 단계: UE5 프로토타입 개발 시작
+- 엔진: Unreal Engine 5.8.0
 - 프로젝트명: `TinyGuardians`
-- 현재 목표: UE5 프로젝트 생성 전 문서 구조와 테스트 챕터 기획 정리
+- 기반: Third Person C++ 템플릿
+- 현재 목표: 게임패드 2개 로컬 플레이어 생성과 쿼터뷰 공유 카메라 검증
 
 ## 게임 방향
 
@@ -25,7 +26,9 @@ Tiny Guardians는 Steam 출시를 목표로 준비 중인 귀여운 캐주얼 �
 - [Docs/game-design.md](Docs/game-design.md): 게임 기획
 - [Docs/gameplay-systems.md](Docs/gameplay-systems.md): 게임플레이 시스템 설계
 - [Docs/decisions.md](Docs/decisions.md): 주요 결정 기록
+- [Docs/setup.md](Docs/setup.md): UE5와 개발환경 설치 가이드
+- [Docs/dev-pc-spec.md](Docs/dev-pc-spec.md): 개발 PC 사양 확인 기록
 
 ## 실행
 
-아직 UE5 프로젝트가 생성되지 않았다.
+Windows에서 `E:\Projects\TinyGuardians\TinyGuardians.uproject`를 Unreal Engine 5.8로 연다.
