@@ -1,0 +1,50 @@
+# Unreal Engine generated files
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Visual Studio / Rider / VS Code local state
+.vs/
+.vscode/
+.idea/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Unreal generated project files
+*.sln
+*.xcodeproj/
+*.xcworkspace/
+
+# Build artifacts
+*.target
+*.modules
+*.version
+*.pdb
+*.obj
+*.ilk
+*.exp
+*.lib
+*.dll
+*.exe
+*.app
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Large packaged builds should be archived outside Git unless explicitly needed
+PackagedBuilds/
+Releases/
